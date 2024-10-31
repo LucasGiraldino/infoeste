@@ -3,6 +3,7 @@ import UsuarioModel from "../model/UsuarioModel.js";
 
 export default class UsuarioController {
     async criar (req, res) {
+        
         let {nome, email, idade} = req.body;
 
         if (nome && email && idade) {
